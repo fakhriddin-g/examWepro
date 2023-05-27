@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  padding: 5px 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Box */
+.container {
+  background-color: gainsboro;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 15%;
+}
+
+.card-box {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.top-burger {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.burger {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 100%;
+}
+
+.deadline {
+  margin: 10px 0 40px;
+}
+
+.img {
+  width: 50px;
+  border-radius: 100%;
+  border: 2px solid green;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-id {
+  margin-right: 90px;
+  font-weight: bold;
+}
+
+/* Iphone */
+.iphone {
+  background-color: gainsboro;
+  margin-top: 5px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.iphone-box {
+  width: 100%;
+  height: 500px;
+  background: #ffffff;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.iphone-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.iphone-box__desc,
+.iphone-box__pre-title {
+  font-weight: bold;
+  color: gray;
+}
+
+.iphone-box__title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.iphone-box__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* iMac */
+.imac {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.info-box {
+  border-bottom: 1px solid gray;
+}
+
+.product-box__content {
+  width: 100%;
+  /* height: 300px; */
+  border-bottom: 1px solid gray;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-box__color-box {
+  display: flex;
+  gap: 5px;
+}
+
+.product-box__color-cycle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.center {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.display {
+  height: 60px;
+}
+
+.display-size {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.display-title,
+.desc {
+  color: gray;
+}
+
+.memory {
+  position: relative;
+  height: 60px;
+}
+
+.memory-size {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.memory-size::after {
+  content: 'Maximum configurable storage';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+
+.imac-weight {
+  font-size: 28px;
+  font-weight: bold;
+  height: 60px;
+  position: relative;
+}
+
+.imac-weight::after {
+  content: 'Weight';
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+
+.feature-img {
+  width: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.arr-length__3::after, .arr-length__1::after {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.arr-length__3::after {
+  content: 'Touch Bar and Touch ID';
+}
+
+.arr-length__1::after {
+  content: 'Touch ID';
+}
